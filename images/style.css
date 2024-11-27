@@ -1,0 +1,68 @@
+/* Setter standard egenskaper for HTML og body */
+html, body {
+    width: 100%; /* Full bredde */
+    height: 100%; /* Full høyde */
+    background-color: navy; /* Bakgrunnsfarge */
+    margin: 0; /* Fjern marginer */
+    display: flex; /* Bruk flexbox */
+    justify-content: center; /* Sentrer horisontalt */
+    align-items: center; /* Sentrer vertikalt */
+    flex-direction: column; /* Ordne innhold i kolonner */
+}
+
+/* Stil for bildene (stein, saks, papir) */
+.stein, .saks, .papir {
+    margin: 1rem; /* Avstand rundt hvert bilde */
+    border: 3px solid black; /* Svart kantlinje */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Skygge for dybdeeffekt */
+    transition: background-color 0.3s ease; /* Jevn overgang ved hover */
+}
+
+/* Når brukeren holder musepekeren over stein */
+.stein:hover {
+    background-color: blue; /* Endrer bakgrunnsfarge til blå */
+}
+
+/* Når brukeren holder musepekeren over saks */
+.saks:hover {
+    background-color: green; /* Endrer bakgrunnsfarge til grønn */
+}
+
+/* Når brukeren holder musepekeren over papir */
+.papir:hover {
+    background-color: purple; /* Endrer bakgrunnsfarge til lilla */
+}
+
+/* Stil for boksen som inneholder spillinformasjon */
+#box {
+    border: 3px solid black; /* Svart kantlinje */
+    background-color: #123456; /* Mørk blå bakgrunn */
+    height: 500px; /* Høyde på boksen */
+    width: 900px; /* Bredde på boksen */
+    padding: 1rem; /* Innvendig margin */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Skygge for dybdeeffekt */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Skygge på tekst */
+    display: flex; /* Bruk flexbox */
+    justify-content: space-around; /* Plasserer innhold jevnt */
+    align-items: center; /* Sentraliserer innhold vertikalt */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Skrifttype */
+    font-size: 3rem; /* Skriftstørrelse */
+}
+
+/* Stil for bildene i boksen */
+.bilder {
+    width: 200px; /* Bredde på bilder */
+}
+
+/* Stil for tekstboksen som viser motstanderens valg og resultat */
+#tekstboks {
+    border: 5px solid rgb(85, 0, 255); /* Lilla kantlinje */
+    border-radius: 1rem; /* Runde hjørner */
+    background-color: #123456; /* Mørk blå bakgrunn */
+    padding: 1rem; /* Innvendig margin */
+    display: flex; /* Bruk flexbox */
+    flex-wrap: wrap; /* Tillater innhold å bryte til flere linjer */
+    justify-content: flex-end; /* Plasserer innhold på slutten */
+    align-items: center; /* Sentraliserer innhold vertikalt */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Lett skygge på tekst */
+}
