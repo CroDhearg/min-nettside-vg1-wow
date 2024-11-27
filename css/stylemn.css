@@ -8,9 +8,9 @@ html, body {
 
 .main-image {
     position: relative;
-    background: url(https://cdn.pixabay.com/photo/2017/11/24/18/42/snowdonia-2975437_960_720.jpg) no-repeat center;
+    background: url(../bilder/jegerlucas.jpg) no-repeat center;
     background-size: cover;
-    height: 500px;
+    height: 1000px;
     overflow: hidden;
 }
 
