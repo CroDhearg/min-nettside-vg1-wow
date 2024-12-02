@@ -59,50 +59,49 @@ html, body {
 
 
 
-/*  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    padding: 20px;
-    color: #333;
-  }
-  */
-  .logg-container {
-    display: flex;
-    flex-direction: column; /* Vertikal layout for rader */
-    gap: 10px; /* Mellomrom mellom logg-rader */
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  
-  
-  .logg-rad {
-    display: flex;
-    justify-content: space-between; /* Plassér innhold jevnt utover */
-    align-items: center;
-    background-color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #0077ff; /* Fargekode for logg */
-  }
-  
-  .dato {
-    flex: 1;
-    font-weight: bold;
-    color: #555;
-  }
-  
-  .klokkeslett {
-    flex: 1;
-    text-align: center;
-    color: #777;
-  }
-  
-  .beskrivelse {
-    flex: 3;
-    text-align: left;
-    color: #333;
-  }
-  
+/* Generell styling */
+/*body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f9;
+}*/
+
+/* Header-styling */
+header h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Tabell-styling */
+.styled-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 18px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.styled-table thead tr {
+  background-color: #855b72;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #d1d1d1;
+}

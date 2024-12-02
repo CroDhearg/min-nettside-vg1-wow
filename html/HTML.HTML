@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Definerer dokumenttypen som HTML5 -->
+<html lang="no"> <!-- Angir språk for dokumentet som norsk -->
+<head>
+    <meta charset="UTF-8"> <!-- Angir tegnsett som UTF-8 for å støtte spesialtegn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør siden responsiv ved å sette bredden til enheten's bredde -->
+    Finn feilene</title> <!-- Viser sidens tittel i nettleserens fane -->
+    <link rel="stylesheet" href="stil.css"> <!-- Kobler til en ekstern CSS-fil for styling --> 
+</head>
+    <body>
+        <header>
+            <h1>Finn feilene</h1> <!-- Overskrift for nettsiden -->
+        <main class="grid-container"> <!-- Hovedinnhold plassert i et rutenett-container -->
+            <!-- Seksjon 1: En uordnet liste -->
+            <section class="section1">
+                <h2>HTML</h2> <!-- Seksjonens overskrift -->
+                <ul> <!-- Starter en uordnet liste -->
+                    <li><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></li> <!-- Link til en ekstern nettside -->
+                </ul>
+        </section>
+            <!-- Seksjon 2: JavaScript-relaterte lenker -->
+            <section class="section2"
+                JavaScript <!-- Seksjonens overskrift -->
+                <ul> <!-- Starter en uordnet liste -->
+                    <li><a href="HTML/AntallBRus.html">Input og lagring i tabell</a></li> <!-- Link til input og tabell-lagring -->
+                </ul>
+            </section>
+            <!-- Seksjon 3: CSS-relaterte lenker -->
+            <section class="section3">
+                <h2>Skjema for risikovurdering og en JS funkskjoner</h2> <!-- Seksjonens overskrift -->
+                <p id="Brus"></p> <!-- Et annet tomt paragraf-element for dynamisk innhold -->
+                <script src="JS.JS"></script><!-- Kobler til en JavaScript-fil for funksjonalitet -->
+                <h2><button onclick="minfunksjonBrus()">JavaScript antall brus</button></h2> <!-- Knapp som aktiverer en JavaScript-funksjon kalt myFunction -->
+            </section>   
+        </main>
+    </body>
+</html>
