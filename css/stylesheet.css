@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    color: #2336ac;
+}
+
+table {
+    margin: 10px auto;
+    height: 200px;
+    width: 600px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+th {
+    color: #2336ac;
+}
+
+div.buttonbox {
+    width: 40%;
+    /* background-color: #717171; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px;
+}
+
+div.textupdates {
+    width: 600px;
+    height: 60px;
+    background-color: #eaeaea;
+    color: #000; /* Ekspisitt tekstfarge */
+    margin: 20px auto 6px;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    /* font-size: larger; */
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cool {
+    background-color: #ff0000;
+}
+
+.hot {
+    background-color: #2336ac;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.bold,
+.blackcard {
+    font-weight: bold;
+}
+
+.redcard {
+    color: red;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+button {
+    font-size: 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #000; /* black */
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+button#newgame {
+    background-color: green;
+    color: white;
+    width: 140px;
+}
+
+button#hit {
+    background-color: green;
+    color: white;
+    width: 70px;
+}
+
+button#stay {
+    background-color: red;
+    color: white;
+    width: 70px;
+}
+
+#tracker {
+    border-top: 3px solid black;
+    border-bottom: 2px solid black;
+}

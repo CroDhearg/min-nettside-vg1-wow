@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stein, Saks, Papir for 4-åringer!</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylee.css">
     <script src="../javascript/script.js" defer></script>
 </head>
 <body>
-    <!-- Spillboks som inneholder valg for "stein", "saks" og "papir" -->
-    <div id="box">
-        <!-- Bilde for "stein" -->
-        <img id="stein" class="stein bilder" src="bilder/Stein.svg" alt="velg for å spille stein">
-        <!-- Bilde for "saks" -->
-        <img id="saks" class="saks bilder" src="bilder/Saks.svg" alt="velg for å spille saks">
-        <!-- Bilde for "papir" -->
-        <img id="papir" class="papir bilder" src="bilder/Papir.svg" alt="velg for å spille papir">
-    </div>
-
-    <!-- Tekstboks som viser spillresultatet -->
-    <h1 id="tekstboks">Velg stein, saks eller papir for å starte!</h1>
-
-    <!-- Restart-knapp for å starte spillet på nytt -->
-    <button id="restartButton">Restart spill</button>
+    <main>
+        <!-- Spillboks som inneholder valg for "stein", "saks" og "papir" -->
+        <section id="box">
+            <!-- Bilde for "stein" -->
+            <img id="stein" class="stein bilder" src="bilder/Stein.svg" alt="Velg stein for å spille" aria-label="Velg stein for å spille">
+            <!-- Bilde for "saks" -->
+            <img id="saks" class="saks bilder" src="bilder/Saks.svg" alt="Velg saks for å spille" aria-label="Velg saks for å spille">
+            <!-- Bilde for "papir" -->
+            <img id="papir" class="papir bilder" src="bilder/Papir.svg" alt="Velg papir for å spille" aria-label="Velg papir for å spille">
+        </section>
+        
+        <!-- Tekstboks som viser spillresultatet -->
+        <h1 id="tekstboks">Velg stein, saks eller papir for å starte!</h1>
+        
+        <!-- Restart-knapp for å starte spillet på nytt -->
+        <button id="restartButton" aria-label="Restart spill">Restart spill</button>
+    </main>
 </body>
 </html>

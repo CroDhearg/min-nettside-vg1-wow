@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneliste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .output {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navneliste</h1>
+
+    <label for="navnInput">Skriv inn et navn:</label>
+    <input type="text" id="navnInput" placeholder="F.eks. Ola Nordmann">
+
+    <button id="leggTilKnapp">Legg til navn</button>
+    <button id="visListeKnapp">Vis listen</button>
+    <button id="avsluttKnapp">Avslutt</button>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        // Variabel for å lagre navnene
+        let navnListe = [];
+
+        // Funksjon for å legge til et navn
+        function leggTilNavn() {
+            let navnInput = document.getElementById("navnInput").value.trim();
+            if (navnInput !== "") {         
+                navnListe.push(navnInput);
+                document.getElementById("output").innerHTML = `<p>${navnInput} er lagt til i listen.</p>`;
+                document.getElementById("navnInput").value = "";
+            } else {
+                document.getElementById("output").innerHTML = "<p>Vennligst skriv inn et gyldig navn.</p>";
+            }
+        }
+
+        // Funksjon for å vise listen
+        function visListe() {
+            if (navnListe.length > 0) {
+                let listeHTML = "<h2>Navn i listen:</h2><ul>";
+                for (let i = 0; i < navnListe.length; i++) {
+                    listeHTML += `<li>${navnListe[i]}</li>`;
+                }
+                listeHTML += "</ul>";
+                document.getElementById("output").innerHTML = listeHTML;
+            } else {
+                document.getElementById("output").innerHTML = "<p>Listen er tom.</p>";
+            }
+        }
+
+        // Funksjon for å avslutte programmet
+        function avslutt() {
+            document.getElementById("output").innerHTML = "<p>Programmet er avsluttet. Takk for bruk!</p>";
+            document.getElementById("leggTilKnapp").disabled = true;
+            document.getElementById("visListeKnapp").disabled = true;
+            document.getElementById("avsluttKnapp").disabled = true;
+        }
+
+        document.getElementById("leggTilKnapp").addEventListener("click", leggTilNavn);
+        document.getElementById("visListeKnapp").addEventListener("click", visListe);
+        document.getElementById("avsluttKnapp").addEventListener("click", avslutt);
+    </script>
+</body>
+</html>
