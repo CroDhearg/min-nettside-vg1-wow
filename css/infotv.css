@@ -1,0 +1,56 @@
+.wrapper{
+	background: url(../bilder/climate-change-concept-collage.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+
+.info-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7); /* Transparent dark background for a sleek look */
+	border: 2px solid #5a190d; /* A warm red border to match the navbar */
+	border-radius: 15px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Softer shadow for a smoother look */
+	padding: 40px;
+	max-width: 800px;
+	text-align: left;
+	line-height: 1.8;
+	z-index: 10;
+	font-family: 'Roboto', sans-serif; /* Matching font to the navbar */
+  }
+  
+  .info-box h1 {
+	color: #6e4b44; /* Matching the red from the navbar */
+	font-size: 32px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  }
+  
+  .info-box p {
+	color: #ffffff; /* White text for better readability */
+	font-size: 18px;
+	margin-bottom: 15px;
+  }
+  
+  .info-box a {
+	color: #a12914;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  .info-box a:hover {
+	text-decoration: underline;
+  }
+  
+  @media (max-width: 900px) {
+	.info-box {
+	  max-width: 90%;
+	  padding: 20px; /* Less padding on smaller screens */
+	}
+  }

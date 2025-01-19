@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz om Marint Avfall</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <!-- Navbar -->
+    <div class="navbar">
+      
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="infotf.html">Info</a></li>
+        <li><a href="støtte.html">Støtte</a></li>
+        <li><a href="klassenssvar.html">Klassens svar</a></li>
+        <li><a href="#" class="active">Quiz</a></li>
+      </ul>
+    </div>
+
+    <!-- Quiz Seksjon -->
+    <div id="quiz-container">
+      <h1>Quiz om Marint Avfall</h1>    
+      <form id="quiz-form">
+        <div id="questions"></div>
+        <button type="button" id="submit-quiz">Send inn svar</button>
+      </form>
+      <div id="results">
+        <canvas id="results-chart" width="400" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../javascript/quiz.js"></script>

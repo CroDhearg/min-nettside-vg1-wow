@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Add box-sizing for consistent sizing */
+}
+
+.wrapper {
+    background: url(../bilder/pexels-anilkarakaya-6495879.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertical alignment */
+    padding: 0 20px; /* Padding for spacing */
+}
+
+.navbar .logo {
+    width: 140px;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex; /* Use flexbox for navigation items */
+    list-style: none;
+    margin-left: auto; /* Push navigation buttons to the right */
+}
+
+.navbar ul li {
+    margin: 0 8px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: red;
+    border-radius: 2px;
+}
+
+
+.wrapper .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    user-select: none;
+}
+
+.center h1,
+.center h2 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    margin: 0 auto; /* Center the text horizontally */
+    text-shadow: 8px 0 15px rgb(0, 0, 0);
+}
+
+.center h2 {
+    margin-top: 10px;
+    text-shadow: 8px 0 20px rgb(0, 0, 0);
+}
+
+.center .buttons {
+    margin: 35px auto; /* Center the buttons horizontally */
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: center; /* Center the buttons */
+}
+
+.buttons button {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffb3b3;
+    background: red;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #cc0000;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+.buttons .btn2 {
+    margin-left: 25px;
+}
+
+.buttons button:hover {
+    background: #cc0000;
+}

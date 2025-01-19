@@ -1,0 +1,59 @@
+.wrapper {
+    position: relative; /* Sørger for at den absolute posisjonen er relativ til dette elementet */
+    background: url(../bilder/climate-change-concept-collage.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh; /* Sørger for at wrapper dekker hele høyden på skjermen */
+  }
+  
+  .info-box-charity {
+    position: absolute; /* Plasserer boksen absolutt i forhold til .wrapper */
+    top: 50%; /* 50% fra toppen */
+    left: 50%; /* 50% fra venstre */
+    transform: translate(-50%, -50%); /* Justerer boksen slik at midten er på riktig sted */
+    background-color: rgba(0, 0, 0, 0.8); /* Mørkere bakgrunn for å matche tema */
+    border: 2px solid #28a745; /* Grønn kant for miljøfokus */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    padding: 25px; /* Justert padding */
+    max-width: 600px; /* Mindre bredde for boksen */
+    width: 100%; /* Gjør boksen fleksibel på mindre skjermer */
+    text-align: left;
+    line-height: 1.8;
+    z-index: 10; /* Sørger for at boksen vises på toppen av andre elementer */
+    font-family: 'Roboto', sans-serif;
+    color: white; /* Tekstfarge satt til hvit */
+  }
+  
+  .info-box-charity h1 {
+    color: #28a745; /* Grønn for tittelen */
+    font-size: 24px; /* Mindre font-størrelse for å passe den mindre boksen */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .info-box-charity p {
+    color: white; /* Tekstfarge for paragrafene er satt til hvit */
+    font-size: 16px; /* Mindre tekststørrelse for bedre plass */
+    margin-bottom: 15px;
+  }
+  
+  .info-box-charity a {
+    color: #28a745; /* Linkene vil ha grønn farge */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .info-box-charity a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 900px) {
+    .info-box-charity {
+      max-width: 90%; /* Reduserer maksimal bredde på små skjermer */
+      padding: 15px; /* Mindre padding på små skjermer */
+    }
+  }
+  

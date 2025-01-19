@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalTxt = document.querySelector(".modal-txt");
     const closebtn = document.querySelector(".close");
     let currentIndex = 0;
-  
+    
     const prevBtn = document.querySelector(".btnPrev");
     const nextBtn = document.querySelector(".btnNext");
   
